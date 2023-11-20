@@ -1,0 +1,15 @@
+:root {
+  --cor-base-1: #202020;
+  --cor-base-2: #ffffff;
+  --cor-primaria: #FFCB47;
+}
+
+.cor-1{
+  color: var(--cor-base-1);
+}
+.cor-2{
+  color: var(--cor-base-2);
+}
+.cor-primaria{
+  color: var(--cor-primaria);
+}

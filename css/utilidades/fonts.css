@@ -1,0 +1,15 @@
+.titulo-1 {
+  font: 900 5.125rem / normal "Elsie Swash Caps", sans-serif;
+}
+.titulo-2 {
+  font: 900 2.625rem / normal "Elsie Swash Caps", sans-serif;
+}
+.titulo-3 {
+  font: 900 2rem / normal "Elsie Swash Caps", sans-serif;
+}
+.texto{
+  font: 400 1rem / normal "Montserrat", sans-serif;
+}
+.texto-semibold{
+  font: 600 1rem / normal "Montserrat", sans-serif;
+}
