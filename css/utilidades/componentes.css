@@ -4,3 +4,13 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.botao{
+  padding: 26px 32px;
+  border: none;
+  font: 600 1rem / 1.625 "Montserrat", sans-serif;
+  color: var(--cor-base-3);
+  background-color: var(--cor-primaria);
+  box-shadow: 10px 10px 30px 0px rgba(255, 203, 71, 0.30);
+  white-space: nowrap;
+}

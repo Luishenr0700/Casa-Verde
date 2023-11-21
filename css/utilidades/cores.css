@@ -1,6 +1,7 @@
 :root {
   --cor-base-1: #202020;
-  --cor-base-2: #ffffff;
+  --cor-base-2: #8d8d8d;
+  --cor-base-3: #ffffff;
   --cor-primaria: #FFCB47;
 }
 
@@ -9,6 +10,9 @@
 }
 .cor-2{
   color: var(--cor-base-2);
+}
+.cor-3{
+  color: var(--cor-base-3);
 }
 .cor-primaria{
   color: var(--cor-primaria);

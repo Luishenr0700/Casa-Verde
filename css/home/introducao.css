@@ -1,0 +1,42 @@
+.introducao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  position: relative;
+}
+.introducao-conteudo{
+  margin-top: 80px;
+}
+.introducao img{
+ width: 70%;
+ height: 100%;
+ object-fit: cover;
+ object-position: left;
+}
+.introducao-conteudo h1{
+  margin-bottom: 24px;
+}
+.introducao-conteudo p{
+  margin-bottom: 32px;
+  max-width: 40ch;
+}
+
+.introducao-form{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.introducao-form input{
+  padding: 24px 40px;
+  border: none;
+}
+.introducao-form input::placeholder{
+  color: var(--cor-base-1);
+  font-weight: 600;
+  opacity: 0.3;
+}
+.introducao-form input:focus{
+  outline: none;
+}
+
+
