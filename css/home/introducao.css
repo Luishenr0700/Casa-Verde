@@ -1,42 +1,157 @@
-.introducao{
+.introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   position: relative;
 }
-.introducao-conteudo{
+.introducao-conteudo {
   margin-top: 80px;
 }
-.introducao img{
- width: 70%;
- height: 100%;
- object-fit: cover;
- object-position: left;
+.introducao > img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  grid-column: 2;
+  grid-row: 1 / -4;
 }
-.introducao-conteudo h1{
+@media (max-width: 1000px) {
+  .introducao img {
+    width: 100%;
+  }
+}
+.introducao-conteudo h1 {
   margin-bottom: 24px;
 }
-.introducao-conteudo p{
+.introducao-conteudo p {
   margin-bottom: 32px;
   max-width: 40ch;
 }
 
-.introducao-form{
+.introducao-form {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+  grid-column: 1;
 }
-.introducao-form input{
+.introducao-form input {
   padding: 24px 40px;
   border: none;
 }
-.introducao-form input::placeholder{
+.introducao-form input::placeholder {
   color: var(--cor-base-1);
   font-weight: 600;
   opacity: 0.3;
 }
-.introducao-form input:focus{
+.introducao-form input:focus {
   outline: none;
 }
+.dec-intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
 
+.introducao-tutorial {
+  justify-self: center;
+  position: absolute;
+  bottom: -350px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  align-items: start;
+  background-color: var(--cor-base-3);
 
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+}
+.introducao-tutorial img {
+  width: 450px;
+  height: 100%;
+  object-fit: cover;
+}
+.introducao-tutorial .tutorial {
+  padding: 60px 60px 40px 32px;
+}
+.tutorial h2 {
+  margin-bottom: 32px;
+}
+.tutorial ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.tutorial ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tutorial ul li::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--cor-primaria);
+}
+.tutorial ul li:nth-child(1)::before {
+  background-image: url("../../img/icons/mouse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tutorial ul li:nth-child(2)::before {
+  background-image: url("../../img/icons/cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tutorial ul li:nth-child(3)::before {
+  background-image: url("../../img/icons/truck.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 860px) {
+  .introducao-form {
+    align-self: center;
+    width: 80%;
+    justify-self: stretch;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .dec-intro{
+    display: none;
+  }
+  .introducao > img {
+    width: 40%;
+    grid-column: auto;
+    grid-row: auto;
+    object-fit: contain;
+    position: absolute;
+    right: 30px;
+    top: -190px;
+    z-index: -1;
+  }
+  .introducao-tutorial {
+    position: unset;
+    margin-top: 40px;
+  }
+
+}
+@media (max-width: 600px) {
+  .introducao-conteudo{
+    margin-top: 2px;
+  }
+  .introducao-conteudo p {
+    max-width: 20ch;
+  }
+  .introducao > img {
+    top: -190px;
+  }
+  .introducao-form{
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: auto;
+  }
+}

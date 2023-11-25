@@ -13,3 +13,14 @@
 .texto-semibold{
   font: 600 1rem / 1.625 "Montserrat", sans-serif;
 }
+
+@media (max-width: 900px){
+  .titulo-1{
+    font: 900 4rem / normal "Elsie Swash Caps", sans-serif;
+  }
+}
+@media (max-width: 860px){
+  .titulo-1{
+    font: 900 2.625rem / normal "Elsie Swash Caps", sans-serif;
+  }
+}

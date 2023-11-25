@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,35 +6,35 @@
   padding: 40px;
   gap: 24px;
 }
-.header ul{
+.header ul {
   display: flex;
   gap: 32px;
 }
-.header ul li{
+.header ul li {
   position: relative;
 }
-.header ul li:not(:first-child)::before{
+.header ul li:not(:first-child)::before {
   content: "/";
   position: absolute;
   left: -18px;
 }
-.header .carrinho-mobile{
+.header .carrinho-mobile {
   display: none;
 }
 
-@media (max-width: 900px){
-  .header{
+@media (max-width: 900px) {
+  .header {
     flex-direction: column;
   }
 }
-@media (max-width: 630px){
-  .header{
+@media (max-width: 860px) {
+  .header {
     flex-direction: row;
   }
-  .header ul{
+  .header ul {
     display: none;
   }
-  .header .carrinho-mobile{
+  .header .carrinho-mobile {
     display: block;
   }
 }
